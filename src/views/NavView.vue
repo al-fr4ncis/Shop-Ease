@@ -232,8 +232,7 @@ export default {
     min-width: 2.7rem;
     min-height: 2.7rem;
     padding: 5px;
-    border-radius: 50%;
-    overflow: visible;
+    border-radius: 40%;
     transition: background-color 0.2s ease;
 
     &:hover {
