@@ -9,7 +9,7 @@
     >
       <div class="nav__container">
         <div class="nav__logo-container">
-          <RouterLink to="/">
+          <RouterLink to="/" aria-label="Home">
             <img src="@/assets/images/logo.webp" alt="logo" class="nav__logo-img logo-img" />
           </RouterLink>
         </div>
