@@ -14,6 +14,11 @@ export default defineConfig({
       plugins: [
         autoprefixer()
       ]
+    },
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@import "./src/assets/variables.scss";`
+      }
     }
   },
   resolve: {
