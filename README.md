@@ -1,35 +1,49 @@
-# Ecommerce
+# Shop Ease - Minimalist E-Commerce Website
 
-This template should help get you started developing with Vue 3 in Vite.
+## Overview
 
-## Recommended IDE Setup
+**Shop Ease** is a minimalist e-commerce platform focused on simplicity and ease of use. It features a clean product catalog and a responsive design optimized for a smooth user experience.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Features
 
-## Customize configuration
+- **Product Catalog**: Display a variety of products with images, descriptions, and prices.
+- **Shopping Cart**: Users can add products to their cart, view the cart, and remove items.
+- **Responsive Design**: Fully responsive layout that works on desktop, tablet, and mobile devices.
+- **Pagination**: Efficiently manage and display large sets of product data.
+- **Product Search**: Users can search for products by name or keyword.
+- **Product Categories**: Filter products by categories for better navigation.
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+## Technologies Used
 
-## Project Setup
+- **Frontend**:
+  - Vue.js (Composition API)
+  - Pinia (State Management)
+  - Vue Router (Client-Side Routing)
+  - SCSS (Styling)
+  - Fetch API (for handling REST API requests)
 
-```sh
-npm install
-```
+- **Backend**:
+  - REST API powered by [DummyJSON](https://dummyjson.com/):
+  
+    _DummyJSON provides a mock REST API with JSON data._
 
-### Compile and Hot-Reload for Development
+- **Build Tools**:
+  - Vite
 
-```sh
-npm run dev
-```
+- **Development Tools**:
+  - Autoprefixer
 
-### Compile and Minify for Production
+- **Linting and Formatting**:
+  - ESLint
+  - Prettier
 
-```sh
-npm run build
-```
+- **Deployment**:
+  - Vercel
 
-### Lint with [ESLint](https://eslint.org/)
+## API Integration
+This project uses the [DummyJSON](https://dummyjson.com) REST API, which provides fake JSON data for development purposes. Key API endpoints include:
 
-```sh
-npm run lint
-```
+- **Products**: `https://dummyjson.com/products`
+- **Product Details**: `https://dummyjson.com/products/{id}`
+- **Search Products**: `https://dummyjson.com/products/search?q=phone`
+- **Get products by a category**: `https://dummyjson.com/products/category/smartphones`
