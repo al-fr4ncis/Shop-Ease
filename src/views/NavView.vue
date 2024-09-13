@@ -14,14 +14,14 @@
           </RouterLink>
         </div>
 
-        <a @click="openCategories" class="nav__categories categories nav__text"
-          >Categories
+        <button @click="openCategories" class="nav__categories categories nav__text">
+          Categories
           <img
             src="@/assets/images/arrow_down.svg"
             class="nav__categories__arrow-down"
             alt="arrow down"
           />
-        </a>
+        </button>
         <CategoriesList />
 
         <div class="nav__search-container search-container">
@@ -169,6 +169,7 @@ export default {
     height: fit-content;
     width: fit-content;
     padding: 0.5rem 2.7rem 0.5rem 1.2rem;
+    border: none;
     border-radius: 2rem;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
