@@ -1,6 +1,16 @@
 <template>
   <Section class="cart">
     <div class="cart__container">
+      <div v-if="cartListCount == 0" class="cart__empty">
+        <div class="cart__empty-container">
+          <img src="/src/assets/images/Empty_Cart.svg" class="cart__empty-img" alt="Cart" />
+          <div class="cart__empty-description-container">
+            <h1 class="cart__empty-title">Your shopping cart is empty</h1>
+            <p class="cart__empty-description">Add your favorite items in it.</p>
+          </div>
+          <RouterLink to="/" class="cart__empty-button">Go shopping now</RouterLink>
+        </div>
+      </div>
       <ul class="cart__list" role="list">
         <li v-for="(product, index) in cart" :key="index" class="cart__item">
           <input type="checkbox" v-model="product.selected" class="cart__checkbox" />
@@ -198,8 +208,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$red: #ee6e12;
+$orange: #ee6e12;
 $white: white;
+$gray: #777;
 
 .cart {
   padding-top: 8rem;
@@ -209,6 +220,54 @@ $white: white;
 
   &__container {
     padding: 0 0.5rem;
+  }
+
+  &__empty {
+    display: grid;
+    align-items: center;
+    height: calc(100dvh - 20rem);
+  }
+
+  &__empty-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__empty-img {
+    min-width: 9rem;
+  }
+
+  &__empty-title {
+    font-size: 1.5rem;
+    font-family: 'Inter', sans-serif;
+    white-space: nowrap;
+  }
+
+  &__empty-description {
+    font-size: 1.3rem;
+    font-family: 'Inter', sans-serif;
+    color: $gray;
+    white-space: nowrap;
+  }
+
+  &__empty-button {
+    grid-column: 1/3;
+    justify-self: center;
+    padding: 1rem 4.2rem;
+    text-decoration: none;
+    color: $white;
+    background-color: $orange;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+
+    &:hover {
+      opacity: 0.7;
+    }
   }
 
   &__list {
@@ -265,7 +324,7 @@ $white: white;
   }
 
   &__discount {
-    border: 1px solid $red;
+    border: 1px solid $orange;
     padding: 0 1px;
   }
 
@@ -406,7 +465,7 @@ $white: white;
   }
 
   &__total-amount {
-    color: $red;
+    color: $orange;
   }
 
   &__checkout {
@@ -415,7 +474,7 @@ $white: white;
     padding: 0.5rem 1rem;
     border-radius: 0.3rem;
     border: 1px solid;
-    background-color: $red;
+    background-color: $orange;
     color: $white;
   }
 }

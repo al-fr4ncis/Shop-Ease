@@ -134,7 +134,6 @@ export default {
       } else {
         activeImage.value = selectedProduct.value.images[0]
       }
-
     })
 
     watch(selectedProduct, (product) => {
