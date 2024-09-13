@@ -112,8 +112,15 @@ export default {
       }
     })
 
+    /**
+     * Fetches the cart data from `localStorage` when the component is mounted.
+     * If a cart is found in `localStorage`, it parses the JSON string and assigns
+     * it to `cart.value`. If no cart is found, it initializes `cart.value` as an
+     * empty array.
+     */
     onMounted(() => {
-      cart.value = JSON.parse(localStorage.getItem('cart'))
+      const storedCart = localStorage.getItem('cart')
+      cart.value = storedCart ? JSON.parse(storedCart) : []
     })
 
     /**
