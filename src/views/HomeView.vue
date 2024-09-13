@@ -12,14 +12,14 @@
         <img
           src="@/assets/images/skincare.jpg"
           class="home__skincare-img home__img"
-          alt="skincare"
+          alt="skincare products"
         />
       </RouterLink>
 
       <RouterLink to="/categories/kitchen-accessories" class="home__kitchen home__links">
         <div class="home__overlay"></div>
         <p class="home__kitchen-title home__title">Kitchen</p>
-        <img src="@/assets/images/kitchen.jpg" class="home__kitchen-img home__img" alt="kitchen" />
+        <img src="@/assets/images/kitchen.jpg" class="home__kitchen-img home__img" alt="kitchen accessories" />
       </RouterLink>
       <RouterLink to="/categories/mobile-accessories" class="home__electronics home__links">
         <div class="home__overlay"></div>
@@ -27,7 +27,7 @@
         <img
           src="@/assets/images/electronics.jpg"
           class="home__electronics-img home__img"
-          alt="electronics"
+          alt="electronic gadget"
         />
       </RouterLink>
     </div>

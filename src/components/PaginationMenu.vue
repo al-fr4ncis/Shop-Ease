@@ -1,8 +1,10 @@
 <template>
-  <ol v-if="totalPages > 1 && $route.name != 'cart'" class="pagination" role="list">
-    <button @click="prev" v-if="currentPage > 1" class="pagination__prev pagination__button">
-      <img src="@/assets/images/arrow-back.svg" class="pagination__prev-img" alt="arrow back" />
-    </button>
+  <ol v-if="totalPages > 1 && $route.name != 'cart'" class="pagination">
+    <li class="pagination__button">
+      <button @click="prev" v-if="currentPage > 1" class="pagination__prev pagination__button">
+        <img src="@/assets/images/arrow-back.svg" class="pagination__prev-img" alt="arrow back" />
+      </button>
+    </li>
 
     <li
       v-for="page in visiblePageIndices"
@@ -14,25 +16,31 @@
       <p class="pagination__index">{{ page }}</p>
     </li>
 
-    <p v-if="totalPages > 5 && currentPage <= totalPages - 3" class="more-pages">...</p>
-    <p
-      @click="moveToPage(totalPages)"
-      v-if="currentPage < totalPages - 2"
-      class="last-index pagination__index"
-    >
-      {{ totalPages }}
-    </p>
-    <button
-      @click="next"
-      v-if="currentPage < totalPages"
-      class="pagination__next pagination__button"
-    >
-      <img
-        src="/src/assets/images/arrow-forward.svg"
-        class="pagination__next-img"
-        alt="arrow forwar"
-      />
-    </button>
+    <li class="pagination__text">
+      <p v-if="totalPages > 5 && currentPage <= totalPages - 3" class="more-pages">...</p>
+    </li>
+    <li class="pagination__link">
+      <p
+        @click="moveToPage(totalPages)"
+        v-if="currentPage < totalPages - 2"
+        class="last-index pagination__index"
+      >
+        {{ totalPages }}
+      </p>
+    </li>
+    <li class="pagination__button">
+      <button
+        @click="next"
+        v-if="currentPage < totalPages"
+        class="pagination__next pagination__button"
+      >
+        <img
+          src="/src/assets/images/arrow-forward.svg"
+          class="pagination__next-img"
+          alt="arrow forwar"
+        />
+      </button>
+    </li>
   </ol>
 </template>
 
