@@ -33,6 +33,7 @@
     </div>
   </div>
   <ProductsView
+    :class="{ 'home-page': $route.query.page == 1 }"
     :products="products"
     :imageLoaded="imageLoaded"
     :isLoading="isLoading"
@@ -214,5 +215,9 @@ $white: white;
   .home {
     padding-top: 10rem;
   }
+}
+
+.home-page {
+  padding-top: 3rem !important;
 }
 </style>
