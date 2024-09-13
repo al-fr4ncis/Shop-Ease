@@ -66,9 +66,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$orange: #df7920;
-$bg-orange: $orange;
-
 .products {
   padding: 0 0.5rem;
   padding-top: 13rem;
@@ -180,7 +177,7 @@ $bg-orange: $orange;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: $bg-orange;
+        background-color: $bg-orange-600;
         clip-path: polygon(
           50% 0%,
           66% 30%,

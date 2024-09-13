@@ -114,8 +114,6 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-$white: white;
-
 .home {
   padding-top: 13rem;
 
@@ -154,7 +152,7 @@ $white: white;
     font-size: 2.5rem;
     bottom: 0;
     left: 1rem;
-    color: $white;
+    color: $clr-white;
     font-weight: 600;
 
     @media (min-width: 400px) {

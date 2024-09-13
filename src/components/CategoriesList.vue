@@ -104,8 +104,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$white: white;
-
 .categories {
   position: fixed;
   z-index: 999;
@@ -120,7 +118,7 @@ $white: white;
     left: 50%;
     border: 1px solid rgba(0, 0, 0, 0.5);
     transform: translate(-50%);
-    background-color: $white;
+    background-color: $bg-white;
     height: 50dvh;
     width: 80dvw;
     max-width: 750px;

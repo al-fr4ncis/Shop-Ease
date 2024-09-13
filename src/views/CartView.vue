@@ -215,10 +215,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$orange: #ee6e12;
-$white: white;
-$gray: #777;
-
 .cart {
   padding-top: 8rem;
   padding-bottom: 6rem;
@@ -255,7 +251,7 @@ $gray: #777;
   &__empty-description {
     font-size: 1.3rem;
     font-family: 'Inter', sans-serif;
-    color: $gray;
+    color: $clr-gray;
     white-space: nowrap;
   }
 
@@ -264,8 +260,8 @@ $gray: #777;
     justify-self: center;
     padding: 1rem 4.2rem;
     text-decoration: none;
-    color: $white;
-    background-color: $orange;
+    color: $clr-white;
+    background-color: $bg-orange-700;
     font-family: 'Inter', sans-serif;
     font-size: 1.5rem;
     border-radius: 0.5rem;
@@ -331,7 +327,7 @@ $gray: #777;
   }
 
   &__discount {
-    border: 1px solid $orange;
+    border: 1px solid $border-orange-700;
     padding: 0 1px;
   }
 
@@ -435,7 +431,7 @@ $gray: #777;
     left: 0;
     padding: 0;
     padding: 1rem;
-    background-color: $white;
+    background-color: $bg-white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
   }
 
@@ -472,7 +468,7 @@ $gray: #777;
   }
 
   &__total-amount {
-    color: $orange;
+    color: $clr-orange-700;
   }
 
   &__checkout {
@@ -481,8 +477,8 @@ $gray: #777;
     padding: 0.5rem 1rem;
     border-radius: 0.3rem;
     border: 1px solid;
-    background-color: $orange;
-    color: $white;
+    background-color: $bg-orange-700;
+    color: $clr-white;
   }
 }
 

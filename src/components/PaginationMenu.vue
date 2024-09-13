@@ -179,9 +179,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$blue: #0654ba;
-$border-blue: $blue;
-
 .pagination {
   margin-top: 3rem;
   display: flex;

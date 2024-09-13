@@ -68,8 +68,6 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
-$orange: #ee6e12;
-
 .not-found {
   position: relative;
   height: 100dvh;
@@ -103,7 +101,7 @@ $orange: #ee6e12;
     color: white;
     text-align: center;
     font-family: 'Inter', sans-serif;
-    background-color: $orange;
+    background-color: $bg-orange-700;
   }
 }
 </style>

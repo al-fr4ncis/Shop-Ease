@@ -141,15 +141,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$white: white;
-$red: #ee6e12;
-
 .nav {
   min-width: 222px;
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: $white;
+  background-color: $bg-white;
   z-index: 999;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
 
@@ -254,8 +251,8 @@ $red: #ee6e12;
     height: 1.8rem;
     right: -1px;
     top: 2px;
-    background-color: $red;
-    color: $white;
+    background-color: $bg-orange-700;
+    color: $clr-white;
     border-radius: 50%;
     text-align: center;
     font-family: 'Inter', sans-serif;

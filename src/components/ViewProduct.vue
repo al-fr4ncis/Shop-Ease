@@ -239,10 +239,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$orange: orange;
-$blue: #3665f3;
-$white: white;
-
 .product {
   &__isloading {
     display: flex;
@@ -256,7 +252,7 @@ $white: white;
     z-index: 999;
     border-radius: 50%;
     border: 1px solid;
-    background-color: $white;
+    background-color: $bg-white;
     width: 3rem;
     height: 3rem;
     display: flex;
@@ -346,7 +342,7 @@ $white: white;
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: $orange;
+      background-color: $bg-orange;
       clip-path: polygon(
         50% 0%,
         66% 30%,
@@ -421,13 +417,13 @@ $white: white;
     row-gap: 0.8rem;
 
     &__add-to-cart {
-      background-color: $blue;
-      color: $white;
+      background-color: $bg-blue-400;
+      color: $clr-white;
     }
 
     &__buy-now {
       background-color: transparent;
-      color: $blue;
+      color: $clr-blue-400;
     }
 
     &__add-to-cart,
@@ -498,7 +494,7 @@ $white: white;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: $orange;
+        background-color: $bg-orange;
         clip-path: polygon(
           50% 0%,
           66% 30%,

@@ -12,14 +12,11 @@
 </template>
 
 <style lang="scss" scoped>
-$black: #191919;
-$white: white;
-
 .footer {
   height: 17rem;
   display: grid;
   align-content: center;
-  background-color: $black;
+  background-color: $bg-black;
   margin-top: 3rem;
 
   &__container {
@@ -32,7 +29,7 @@ $white: white;
 
   &__text {
     text-decoration: none;
-    color: $white;
+    color: $clr-white;
     font-weight: 700;
     font-size: 1.8rem;
     font-family: 'Inter', sans-serif;
