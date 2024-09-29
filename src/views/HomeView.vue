@@ -19,7 +19,11 @@
       <RouterLink to="/categories/kitchen-accessories" class="home__kitchen home__links">
         <div class="home__overlay"></div>
         <p class="home__kitchen-title home__title">Kitchen</p>
-        <img src="@/assets/images/kitchen.jpg" class="home__kitchen-img home__img" alt="kitchen accessories" />
+        <img
+          src="@/assets/images/kitchen.jpg"
+          class="home__kitchen-img home__img"
+          alt="kitchen accessories"
+        />
       </RouterLink>
       <RouterLink to="/categories/mobile-accessories" class="home__electronics home__links">
         <div class="home__overlay"></div>
